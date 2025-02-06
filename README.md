@@ -93,7 +93,7 @@ api-duckduckgo/
 
 API Endpoints
 
-1. Search DuckDuckGo
+### **1. Search DuckDuckGo**
 
 GET /search?q=your_query
 
@@ -119,7 +119,8 @@ Example:
 
 curl -X POST "http://localhost:3000/search" -H "Content-Type: application/json" -d '{"query":"example"}'
 
-2. Get Search History
+### **2. Get Search Historyo**
+
 
 GET /search/history
 
@@ -129,7 +130,7 @@ Example:
 
 curl -X GET "http://localhost:3000/search/history"
 
-3. Clear Search History
+### **3. Clear Search History**
 
 POST /search/clear-history
 
