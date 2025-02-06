@@ -91,6 +91,55 @@ api-duckduckgo/
 | POST   | `/search`           | Search with request body    |
 | POST   | `/clear-history`    | Clear search history        |
 
+API Endpoints
+
+1. Search DuckDuckGo
+
+GET /search?q=your_query
+
+Description: Perform a search on DuckDuckGo.
+
+Query Parameters:
+
+q (string, required): The search term.
+
+Example:
+
+curl -X GET "http://localhost:3000/search?q=example"
+
+POST /search
+
+Description: Perform a search on DuckDuckGo using a JSON body.
+
+Request Body:
+
+{ "query": "example" }
+
+Example:
+
+curl -X POST "http://localhost:3000/search" -H "Content-Type: application/json" -d '{"query":"example"}'
+
+2. Get Search History
+
+GET /search/history
+
+Description: Retrieve the stored search history.
+
+Example:
+
+curl -X GET "http://localhost:3000/search/history"
+
+3. Clear Search History
+
+POST /search/clear-history
+
+Description: Delete the stored search history.
+
+Example:
+
+curl -X POST "http://localhost:3000/search/clear-history"
+
+
 ## 💡 Contributing
 
 1. Fork the repository
