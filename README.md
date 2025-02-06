@@ -7,7 +7,7 @@ This is the back-end of the DuckDuckGo search API project, built with **Node.js*
 ### **1. Clone the Repository**
 
 ```sh
-git clone <your-repo-url>
+git clone https://github.com/wellboorati/duckduckgo-back-end.git
 cd api-duckduckgo
 ```
 
